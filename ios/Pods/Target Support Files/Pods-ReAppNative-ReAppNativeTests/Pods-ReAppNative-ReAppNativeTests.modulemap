@@ -1,0 +1,6 @@
+module Pods_ReAppNative_ReAppNativeTests {
+  umbrella header "Pods-ReAppNative-ReAppNativeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

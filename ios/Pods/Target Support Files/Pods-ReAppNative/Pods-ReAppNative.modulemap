@@ -1,0 +1,6 @@
+module Pods_ReAppNative {
+  umbrella header "Pods-ReAppNative-umbrella.h"
+
+  export *
+  module * { export * }
+}
