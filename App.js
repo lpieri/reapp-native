@@ -10,7 +10,7 @@ import {
   Colors,
 } from 'react-native/Libraries/NewAppScreen';
 
-import TitleAtom from './srcs/components/atoms/TitleAtom'
+import { TitleAtom, ProfilePictureAtom } from 'srcs/components/atoms'
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -29,6 +29,7 @@ const App = () => {
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
 			  <TitleAtom />
+			  <ProfilePictureAtom />
         </View>
       </ScrollView>
     </SafeAreaView>

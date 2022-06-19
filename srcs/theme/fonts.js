@@ -24,4 +24,12 @@ const type = {
 	montserratSemiBold: 'Montserrat-SemiBold',
 };
 
-export default {size, weight, type}
+const styles = {
+	title: {
+		fontSize: size.font20,
+		fontWeight: weight.bold,
+		letterSpacing: 2.5,
+	}
+}
+
+export default {size, weight, type, styles}
