@@ -5,15 +5,15 @@ import { TitleAtom, ProfilePictureAtom } from '~/srcs/components/atoms'
 import Styles from '~/srcs/styles'
 
 
-class TitleMolecule extends Component {
+class ProfileTitleMolecule extends Component {
 	render () {
 		return (
 		<View style={Styles.container}>
-			<ProfilePictureAtom />
+			<ProfilePictureAtom source={this.props.profilePictureSource}/>
 			<TitleAtom />
 		</View>
 		);
 	}
 }
 
-export default TitleMolecule;
+export default ProfileTitleMolecule;

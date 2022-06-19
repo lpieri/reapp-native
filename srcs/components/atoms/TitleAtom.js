@@ -10,7 +10,7 @@ class TitleAtom extends Component {
 				textAlign: 'center',
 				color: 'gray'
 			}}>
-			Re-App Native
+			Nomads Swipe
 			</Text>;
 	}
 }

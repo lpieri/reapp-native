@@ -4,13 +4,14 @@ import {
   ScrollView,
   useColorScheme,
   View,
+  CheckBox
 } from 'react-native';
 
 import {
   Colors,
 } from 'react-native/Libraries/NewAppScreen';
 
-import { TitleMolecule } from '~/srcs/components/molecules'
+import { ProfileTitleMolecule } from '~/srcs/components/molecules'
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -28,7 +29,7 @@ const App = () => {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-			  <TitleMolecule />
+			  <ProfileTitleMolecule profilePictureSource={require("~/srcs/assets/pp.png")}/>
         </View>
       </ScrollView>
     </SafeAreaView>

@@ -11,7 +11,7 @@ class ProfilePictureAtom extends Component {
 				 width: Metrics.screenWidth / 5,
 				 height: Metrics.screenWidth / 5,
 				}}
-			 source={require('~/srcs/assets/pp.png')}
+			 source={this.props.source}
 			/>;
 	}
 }

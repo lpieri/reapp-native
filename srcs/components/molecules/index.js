@@ -1,5 +1,5 @@
-import TitleMolecule from './TitleMolecule'
+import ProfileTitleMolecule from './ProfileTitleMolecule'
 
 export {
-	TitleMolecule,
+	ProfileTitleMolecule,
 };
