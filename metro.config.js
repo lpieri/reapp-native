@@ -5,10 +5,15 @@
  * @format
  */
 
- const path = require('path');
-  const watchFolders = [
-	path.resolve(__dirname)
-  ];
+const path = require('path');
+
+const extraNodeModules = {
+	'~': path.resolve(__dirname + '/srcs/'),
+};
+
+const watchFolders = [
+	path.resolve(__dirname + '/srcs/')
+];
 
 module.exports = {
   transformer: {
@@ -18,6 +23,9 @@ module.exports = {
         inlineRequires: true,
       },
     }),
+  },
+  resolver: {
+    extraNodeModules
   },
   watchFolders
 };

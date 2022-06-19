@@ -1,8 +1,7 @@
-
 import React, { Component } from 'react';
 import { Text } from 'react-native';
 
-import fonts from 'srcs/theme/fonts';
+import fonts from '~/srcs/theme/fonts';
 
 class TitleAtom extends Component {
 	render () {
