@@ -4,14 +4,15 @@ import {
   ScrollView,
   useColorScheme,
   View,
-  CheckBox
+  Text
 } from 'react-native';
 
 import {
   Colors,
 } from 'react-native/Libraries/NewAppScreen';
 
-import { ProfileTitleMolecule } from '~/srcs/components/molecules'
+import { ProfileTitleMolecule } from 'srcs/components/molecules'
+import { ButtonAtom } from 'srcs/components/atoms'
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -29,7 +30,10 @@ const App = () => {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-			  <ProfileTitleMolecule profilePictureSource={require("~/srcs/assets/pp.png")}/>
+			  <ProfileTitleMolecule profilePictureSource={require("./srcs/assets/pp.png")}/>
+			  <View style={{padding: 20}}>
+			  	<ButtonAtom />
+			  </View>
         </View>
       </ScrollView>
     </SafeAreaView>

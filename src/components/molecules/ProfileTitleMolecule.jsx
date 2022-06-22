@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
 
-import { TitleAtom, ProfilePictureAtom } from '~/srcs/components/atoms'
-import Styles from '~/srcs/styles'
+import { TitleAtom, ProfilePictureAtom } from './../atoms'
+import styles from './../../styles'
 
 
 class ProfileTitleMolecule extends Component {
 	render () {
 		return (
-		<View style={Styles.container}>
+		<View style={styles.container}>
 			<ProfilePictureAtom source={this.props.profilePictureSource}/>
 			<TitleAtom />
 		</View>

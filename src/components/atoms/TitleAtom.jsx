@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Text } from 'react-native';
 
-import fonts from '~/srcs/theme/fonts';
+import {fonts} from './../../theme/fonts';
 
 class TitleAtom extends Component {
 	render () {
@@ -10,7 +10,7 @@ class TitleAtom extends Component {
 				textAlign: 'center',
 				color: 'gray'
 			}}>
-			Nomads Swipe
+			Re App Native
 			</Text>;
 	}
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Image } from 'react-native';
 
-import Metrics from '~/srcs/theme/metrics';
+import Metrics from './../../theme/metrics';
 
 class ProfilePictureAtom extends Component {
 	render () {
